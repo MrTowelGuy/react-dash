@@ -1,38 +1,71 @@
-.App {
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+div {
+  margin: 20px;
+}
+
+.dashboard {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #6d9dfb;
+  border-radius: 4px;
+}
+
+.sidebar {
+  background-color: #6d9dfb;
+  grid-column: 1/1;
+  grid-row: 1/4;
+  border-radius: 4px;
+}
+
+.sidebar-buttons {
+  margin-top: 80%;
+  margin-left: 25%;
+}
+
+.reviews {
+  background-color: rgb(143, 190, 202);
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+.rating {
+  background-color: rgb(143, 190, 202);
+  grid-column: 3/4;
+  grid-row: 1/2;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+.analysisContainer {
+  background-color: rgb(143, 190, 202);
+  grid-column: 4/5;
+  grid-row: 1/2;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+.analysis {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.visitors {
+  background-color: rgb(135, 135, 135);
+  grid-column: 2/5;
+  grid-row: 2/4;
+  padding-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.graphic {
+  background-color: rgb(179, 212, 255);
+  height: 345px;
+  width: 600px;
+  margin: auto;
+  border-radius: 4px;
 }
